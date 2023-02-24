@@ -2,6 +2,6 @@
 Some baremetal examples with atmega328p
 
 
-make
+>make
 
-./avr-flash boot/bin/boot.hex
+>./avr-flash boot/bin/boot.hex

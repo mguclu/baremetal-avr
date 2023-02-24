@@ -2,9 +2,9 @@
 Highly documented and colorized baremetal examples with atmega328p
 
 ### Requirements
-avr-gcc
-avrdude
-qemu for avr emulation
+* avr-gcc
+* avrdude
+* qemu     
 
 ### Download this repo
 ```shell

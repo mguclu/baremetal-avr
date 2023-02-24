@@ -58,6 +58,6 @@ chmod +x avr-flash
 ```
 
 ```shell
-./avr-flash boot/bin/boot.hex
+./avr-flash.sh boot/bin/boot.hex
 ```
 

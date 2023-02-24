@@ -23,8 +23,8 @@ MCU="ATMEGA328P"
 PROGID="arduino"
 BAUD="115200"
 
-binfolder="./bin/"$1
-echo $binfolder
+bin=$1
+echo $bin
 array=( $(ls /dev/ttyUSB* 2>/dev/null))
 
 if [ -z "$1" ] ; then

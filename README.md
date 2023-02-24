@@ -13,12 +13,12 @@ git clone https://github.com/mguclu/baremetal-avr.git
 ```shell
 cd baremetal-avr
 ```
-## Compile 
+### Compile 
 ```shell
 make
 ```
 
-## Using Flash Script
+### Using Flash Script
 ```shell
 chmod +x avr-flash
 ```

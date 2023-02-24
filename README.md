@@ -31,7 +31,7 @@ git clone https://github.com/mguclu/baremetal-avr.git && cd baremetal-avr/
 
 ## Compile 
 ```shell
-make
+make all
 ```
 ## Emulate using QEMU
 If you want to emulate atmega328p use this command:

@@ -9,7 +9,7 @@ Highly documented and colorized baremetal examples for atmega328p. This project 
 GNU Make
 
 `
-apt-get install install make
+apt-get install make
 `
 
 GNU Cross Compiler for AVR **gcc-avr, binutils, avr-libc**.

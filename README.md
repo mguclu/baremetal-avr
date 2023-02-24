@@ -1,10 +1,16 @@
 baremetal-avr
 ======
-Highly documented and colorized baremetal examples for atmega328p. This repo demonstrates compiling Assembly and C files and linking them using custom linker scripts. You can also use qemu or avr-flash script to either emulate or flash your code. 
+Highly documented and colorized baremetal examples for atmega328p. This project has no intentions of reinventing the wheel but will try to go low _level as possible. Boot example demonstrates compiling Assembly and C files and linking them using custom linker scripts. You can also use qemu or avr-flash script to emulate and flash your code.
 
 
 
 ## Requirements
+
+GNU Make
+
+`
+apt-get install install make
+`
 
 GNU Cross Compiler for AVR **gcc-avr, binutils, avr-libc**.
 

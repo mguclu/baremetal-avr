@@ -1,12 +1,12 @@
 # baremetal-avr
 Highly documented and colorized baremetal examples with atmega328p
 
-## Requirements
+### Requirements
 avr-gcc
 avrdude
 qemu for avr emulation
 
-## Download this repo
+### Download this repo
 ```shell
 git clone https://github.com/mguclu/baremetal-avr.git
 ```

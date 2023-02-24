@@ -35,7 +35,7 @@ fi
 
 if [ -z "$array" ] ; then
 
-	echo -e ${RED}"\nNo Device Attached."${NC}
+	echo -e ${RED}"\n No Device Attached."${NC}
 	exit	
 
 
@@ -98,4 +98,4 @@ esac
 
 echo -e ${GREEN}"\nFlashing ${RED}$dev\n"${NC}
 
-avrdude -F -V -C ${CONF} -c ${PORGID} -p ${MCU} -P $dev -b ${BAUD} -U flash:w:${bin}
+avrdude -F -V -C ${CONF} -c ${PROGID} -p ${MCU} -P $dev -b ${BAUD} -U flash:w:${bin}

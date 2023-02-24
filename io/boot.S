@@ -1,21 +1,22 @@
 
 
-.include "defs.h"			;mcu specific definitions
-.include "setStack.S"				
+.include "../include/defs.h"				;mcu specific definitions
+.include "../include/setStack.S"				
 
 
-.global _start					;Export _start as global function
-.extern c_entry
-.extern _loop
-.org 	0x00					
-					
-.text	
-		
-_start:						;Program Entry	
+.global _start					;Export function				
+.extern _loop					;Import function
 
-	setStack					
-	ldi r16, 0xFF
-	out DDRB, r16
+.org 	0x00									
+.text			
+
+_start:							;Program entry point
+
+	
+	setStack					;Call setStack macro					
+	
+	ldi r16, 0xFF				;Set DDRB as output
+	out DDRB, r16				
 	
 	rjmp _loop
 

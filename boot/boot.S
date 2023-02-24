@@ -1,7 +1,7 @@
 
 
-.include "defs.h"				;mcu specific definitions
-.include "setStack.S"				
+.include "../include/defs.h"				;mcu specific definitions
+.include "../include/setStack.S"				
 
 
 .global _start					;Export _start as global function

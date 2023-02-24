@@ -5,7 +5,7 @@ MCU			=atmega328p
 
 all: 
 	avr-gcc -Os -DF_CPU=$(CPU_FREQ) -mmcu=$(MCU) -c $(NAME).S main.c
-	avr-ld -T $(NAME).ld *.o -o $(NAME).elf
+	avr-ld -T boot.ld *.o -o $(NAME).elf
 	avr-objcopy -O binary $(NAME).elf $(NAME).bin
 	avr-objcopy -O ihex -R .eeprom $(NAME).o $(NAME).hex
 	[ -d bin ] || mkdir ./bin

@@ -58,6 +58,7 @@ chmod +x avr-flash
 ```
 
 ```shell
-./avr-flash boot/bin/boot.hex
+make flash_io
+./avr-flash io/bin/boot.hex
 ```
 

@@ -29,39 +29,42 @@ Qemu AVR Emulator **qemu-system-avr**.
 `
 apt-get install qemu-system-avr
 `
-## Clone this repo
+### Clone this repo
 
 ```shell
 git clone https://github.com/mguclu/baremetal-avr.git && cd baremetal-avr/
 ```
-## Build all examples
+### Build all examples
 
 ```shell
 make all
 ```
-
-# Building blink example
-Following instructions demonstrates compiling and flashing a basic blink example. 
-
-```shell
-make bin_io
-```
-
-## Using flash script
+### Using flash script
 You can customize and use this script for flashing various binary files to various Atmel MCU's.
 ```shell
 chmod +x avr-flash.sh
 ```
-```shell
-make flash_io
-```
-or
 
 ```shell
 ./avr-flash.sh io/bin/boot.bin
 ```
 
-## Emulate using QEMU
+# Building blink example
+Following instructions demonstrates compiling and flashing a basic blink example. 
+
+#### Build binary files
+
+```shell
+make bin_io
+```
+
+#### Flash to microcontroller
+
+```shell
+make flash_io
+```
+
+#### Emulate using QEMU
 If you want to emulate atmega328p with very limited support use following commands:
 
 ```shell

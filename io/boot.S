@@ -18,5 +18,5 @@ _start:							;Program entry point
 	ldi r16, 0xFF				;Set DDRB as output
 	out DDRB, r16				
 	
-	rjmp _loop
+	call _loop
 

@@ -1,4 +1,5 @@
 #!/bin/bash
+####################################### Make It Pretty #########################################
 
 BLACK='\033[0;30m'
 RED='\033[0;31m'
@@ -18,18 +19,29 @@ LIGHTCYAN='\033[1;36m'
 WHITE='\033[1;37m'
 NC='\033[0m'
 
+################################################################################################
+
+
+## Configuration ##
+
 CONF="/snap/arduino/70/hardware/tools/avr/etc/avrdude.conf"
 MCU="ATMEGA328P"
 PROGID="arduino"
 BAUD="115200"
 
 bin=$1
-echo $bin
+echo -e ${RED}"\n##"${NC}
+echo -e ${RED}"\nInput file: ${GREEN}$bin"${NC}
+
 array=( $(ls /dev/ttyUSB* 2>/dev/null))
 
-if [ -z "$1" ] ; then
+if [ -z "$1" ] ; then												# For direct arguments 
 	
 	echo -e ${RED}"\n No Input Binary File."${NC}
+	exit
+fi	
+if [ ! -d bin ] ; then
+	echo -e ${RED}"\n No ./bin folder. Use make or specify binary path\n"${NC}
 	exit
 fi
 

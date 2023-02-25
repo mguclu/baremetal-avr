@@ -25,6 +25,8 @@ clean:
 	make clean -C io/
 
 ## Limited support for AVR mcu's 
-qemu:
-	qemu-system-avr -machine uno -bios ./boot/bin/boot.bin
-	qemu-system-avr -machine uno -bios ./io/bin/boot.bin
+qemu_io:
+	make qemu -C io/
+
+qemu_boot:
+	make qemu -C boot/

@@ -30,12 +30,19 @@ Qemu AVR Emulator **qemu-system-avr**.
 apt-get install qemu-system-avr
 `
 ## Clone this repo
+
 ```shell
 git clone https://github.com/mguclu/baremetal-avr.git && cd baremetal-avr/
 ```
+## Build all examples
 
-## Building blink example
+```shell
+make all
+```
+
+# Building blink example
 Following instructions demonstrates compiling and flashing a basic blink example. 
+
 ```shell
 make bin_io
 ```

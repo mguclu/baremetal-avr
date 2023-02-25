@@ -55,12 +55,12 @@ or
 ```
 
 ## Emulate using QEMU
-If you want to emulate atmega328p use this command:
+If you want to emulate atmega328p with very limited support use following commands:
 
 ```shell
-qemu-system-avr -machine uno -bios ./boot/bin/boot.bin
+qemu-system-avr -machine uno -bios ./io/bin/boot.bin
 ```
-or simply use `make qemu`
+or simply use `make qemu_io`
 
 Some useful commands:
 * `info registers` Show current status of registers

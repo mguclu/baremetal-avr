@@ -1,5 +1,5 @@
 
-NAME		=io
+NAME		=boot
 CPU_FREQ	=16000000UL
 MCU			=atmega328p
 BOOT		=./bin/boot.bin

@@ -1,5 +1,4 @@
 #include "../include/defs_c.h"
-#include <stdint.h>
 
 // #define _BV(x)   (1 << x)
 

@@ -46,7 +46,7 @@ chmod +x avr-flash.sh
 ```
 
 ```shell
-./avr-flash.sh io/bin/boot.bin
+./avr-flash.sh blink/bin/boot.bin
 ```
 
 # Building blink example
@@ -55,22 +55,22 @@ Following instructions demonstrates compiling and flashing a basic blink example
 #### Build binary files
 
 ```shell
-make bin_io
+make bin_blink
 ```
 
 #### Flash to microcontroller
 
 ```shell
-make flash_io
+make flash_blink
 ```
 
 #### Emulate using QEMU
 If you want to emulate atmega328p with very limited support use following commands:
 
 ```shell
-qemu-system-avr -machine uno -bios ./io/bin/boot.bin
+qemu-system-avr -machine uno -bios ./blink/bin/boot.bin
 ```
-or simply use `make qemu_io`
+or simply use `make qemu_blink`
 
 Some useful commands:
 * `info registers` Show current status of registers

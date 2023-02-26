@@ -1,5 +1,6 @@
 
 .global _delay_ms
+.type _delay_ms,@function
 .text
 
 _delay_ms:
@@ -7,7 +8,6 @@ _delay_ms:
     ldi  r18, 82
     ldi  r19, 43
     ldi  r20, 0
-    
     
 L1: 
     dec  r20

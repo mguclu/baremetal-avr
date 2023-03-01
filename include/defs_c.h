@@ -46,7 +46,7 @@
 #define PORTB6	6
 #define PORTB7 	7
 
-#define PINB 	*((uint8_t*) 0x23)		//0x03			//Pin registers For reading input
+#define PINB 	*((volatile uint8_t*) 0x23)		//0x03			//Pin registers For reading input
 #define PINB0	0
 #define PINB1	1
 #define PINB2	2
